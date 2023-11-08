@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surver form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Survey Form</h1>
+    <form id="survey-form">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" required>
+
+        <label for="last-name">Last name</label>
+        <input type="text" id="last-name" required>
+
+        <label for="dob" class="dob"> Date of Birth:</label>
+        <input type="date" id="dob" required>
+
+        <label for="country">Country:</label>
+        <select id="country">
+            <option value="">Select country</option>
+            <option value="">INDIA</option>
+            <option value="">USA</option>
+            <option value="">UK</option>
+        </select>
+        <h4>Gender:</h4>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+      
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+
+        <label for="Profession">Profession</label>
+        <input type="text" name="" id="Profession" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="" id="email" required>
+
+        <label for="mobile-number">Phone Number</label>
+        <input type="number" id="mobile-number" required>
+
+        <div class="button">
+            <button type="button" id="submit-button" onclick="submitForm()">Submit</button>
+            <button type="button" id="reset-button" onclick="resetForm()">Reset</button>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
